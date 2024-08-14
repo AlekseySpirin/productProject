@@ -1,5 +1,4 @@
 import {classNames} from "shared/lib/classNames/classNames";
-import cls from './LandSwitcher.module.scss'
 import {useTranslation} from "react-i18next";
 import {Button, ThemeButton} from "shared/ui/Button/Button";
 
@@ -16,7 +15,7 @@ export const LandSwitcher = ({className}: LandSwitcherProps) => {
 
     return (
         <Button
-            className={classNames(cls.landSwitcher, {}, [className])}
+            className={classNames('', {}, [className])}
             theme={ThemeButton.CLEAR}
             onClick={toggle}
         >
